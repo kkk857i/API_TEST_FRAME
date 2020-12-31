@@ -55,7 +55,8 @@ class ExcelUtils():
 
 if __name__=='__main__':
     current_path=os.path.dirname(__file__)
-    excel_path=os.path.join(current_path,'..','samples/data/test_data.xlsx')
+    excel_path=os.path.join(current_path,'..','samples/data/test_case.xlsx')
     excelUtils=ExcelUtils(excel_path,'Sheet1')
-    # for row in excelUtils.get_sheet_data_by_dict()
-    print(excelUtils.get_sheet_data_by_dict())
+    for row in excelUtils.get_sheet_data_by_dict():
+        print(row)
+    # print(excelUtils.get_sheet_data_by_dict())
