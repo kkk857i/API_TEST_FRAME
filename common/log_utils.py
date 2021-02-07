@@ -2,7 +2,7 @@
 import os
 import time
 import logging
-from common.localconfig import local_config
+from common.localconfig_utils import local_config
 
 currnet_path=os.path.dirname(__file__)
 log_output_path=os.path.join(currnet_path,'..',local_config.LOG_PATH)
