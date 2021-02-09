@@ -33,4 +33,4 @@ class LocalconfigUtils():
 local_config=LocalconfigUtils()
 
 if __name__=='__main__':
-    print(local_config.LOG_PATH)
+    print(local_config.URL)
